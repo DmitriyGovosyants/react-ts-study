@@ -25,6 +25,7 @@ const Card: FC<CardProps> = ({
   return (
     <div style={{
       width,
+      
       height,
       border: variant === CardVariant.outlined ? '1px solid black' : 'none',
       background: variant === CardVariant.primary ? 'lightgray' : '',
