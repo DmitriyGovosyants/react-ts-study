@@ -24,7 +24,7 @@ const UsersPage: FC = () => {
   };
 
   return (
-    <List items={users} renderItem={(user: IUser) => <UserItem onClick={(user) => navigate('/users/' + user.id)} user={user} key={user.id} />} />
+    <List items={users} renderItem={(user: IUser) => <UserItem onClick={(user) => navigate('/ulbi-tv/users/' + user.id)} user={user} key={user.id} />} />
   )
 };
 

@@ -2,7 +2,7 @@ import { FC } from "react";
 import Card, { CardVariant } from "./Card";
 import EventsExample from "./EventsExample";
 
-const HomePage: FC = () => {
+const EventsPage: FC = () => {
 
   return (
     <div>
@@ -15,4 +15,4 @@ const HomePage: FC = () => {
   )
 };
 
-export default HomePage;
+export default EventsPage;

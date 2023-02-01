@@ -27,7 +27,7 @@ const UserItemPage: FC = () => {
 
   return (
     <div>
-      <button onClick={() => navigate('/users')}>back</button>
+      <button onClick={() => navigate('/ulbi-tv/users')}>back</button>
       <h1>Page {user?.name}</h1>
       <div>{user?.email}</div>
       <div>{user?.address.city} {user?.address.street} {user?.address.zipcode}</div>
