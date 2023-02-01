@@ -1,33 +1,25 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
-import Card, { CardVariant } from "./components/Card";
-import UserList from "./components/UserList";
-import { IUser } from "./types/types";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import TodosPage from "./components/TodosPage";
+import UsersPage from "./components/UsersPage";
+import HomePage from "./components/HomePage";
+import SharedLayout from "./components/SharedLayout";
+import UserItemPage from "./components/UserItemPage";
+import TodoItemPage from "./components/TodoItemPage";
 
 const App = () => {
-  const [users, setUsers] = useState<IUser[]>([])
-
-  useEffect(() => {
-    fetchUsers();
-  }, []);
-
-  const fetchUsers = async () => {
-    try {
-      const response = await axios.get<IUser[]>('https://jsonplaceholder.typicode.com/users');
-      setUsers(response.data);
-    } catch (e) {
-      alert(e);
-    };
-  };
-
   return (
-    <div>
-      <Card onClick={(num) => console.log('Yes!!', num)} variant={CardVariant.primary} width="200px" height="200px">
-        <button>fasdfsd</button>
-        asdfasdf
-      </Card>
-      <UserList users={users} />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={'/'} element={<SharedLayout />}>
+          <Route index element={<HomePage/>} />
+          <Route path={'/users'} element={<UsersPage/>} />
+          <Route path={'/todos'} element={<TodosPage />} />
+          <Route path={'/users/:id'} element={<UserItemPage />} />
+          <Route path={'/todos/:id'} element={<TodoItemPage/>} />
+        </Route>
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
