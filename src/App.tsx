@@ -8,6 +8,11 @@ import TodoItemPage from "./ulbitv/components/TodoItemPage";
 import EventsPage from "./ulbitv/components/EventsPage";
 import BaseOne from "./webdev/components/BaseOne";
 import BaseTwo from "./webdev/components/BaseTwo";
+import Function from "./webdev/components/Function";
+import Object from "./webdev/components/Object";
+import ClassType from "./webdev/components/ClassType";
+import GenericType from "./webdev/components/GenericType";
+import UtilityTS from "./webdev/components/UtilityTS";
 
 const App = () => {
   return (
@@ -24,7 +29,12 @@ const App = () => {
           </Route>
           <Route path={'/webdev'}>
             <Route path={'base1'} element={<BaseOne />} />
-            <Route path={'base2'} element={<BaseTwo/>} />
+            <Route path={'base2'} element={<BaseTwo />} />
+            <Route path={'function'} element={<Function />} />
+            <Route path={'object'} element={<Object />} />
+            <Route path={'class'} element={<ClassType />} />
+            <Route path={'generic'} element={<GenericType />} />
+            <Route path={'utility'} element={<UtilityTS />} />
           </Route>
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />

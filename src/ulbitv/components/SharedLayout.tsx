@@ -21,7 +21,12 @@ const SharedLayout = () => {
         </h2>
         <div>
           <NavLink style={{ padding: 10, border: '4px solid red', marginRight: 10 }} to={'/webdev/base1'}>Base 1</NavLink>
-          <NavLink style={{padding: 10, border: '4px solid red', marginRight: 10}} to={'/webdev/base2'}>Base 2</NavLink>
+          <NavLink style={{ padding: 10, border: '4px solid red', marginRight: 10 }} to={'/webdev/base2'}>Base 2</NavLink>
+          <NavLink style={{ padding: 10, border: '4px solid red', marginRight: 10 }} to={'/webdev/function'}>Function</NavLink>
+          <NavLink style={{ padding: 10, border: '4px solid red', marginRight: 10 }} to={'/webdev/object'}>Object</NavLink>
+          <NavLink style={{ padding: 10, border: '4px solid red', marginRight: 10 }} to={'/webdev/class'}>Class</NavLink>
+          <NavLink style={{ padding: 10, border: '4px solid red', marginRight: 10 }} to={'/webdev/generic'}>Generic</NavLink>
+          <NavLink style={{padding: 10, border: '4px solid red', marginRight: 10}} to={'/webdev/utility'}>Utility</NavLink>
         </div>
       </div>
       <main>

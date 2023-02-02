@@ -31,11 +31,11 @@ const BaseOne = () => {
   return (
     <>
       <h2>Base TS types</h2>
-      <div><b>1. boolean:</b> {isCompeleted ? 'true' : 'false'}</div>
-      <div><b>2. number:</b> {decimal} --- {integer} --- {hex} --- {binary} --- {octal} </div>
-      <div><b>3. string:</b> {sentence}</div>
-      <div><b>4. null & undefined:</b> {`${n} ${u}`}</div>
-      <div><b>5. void:</b> <button onClick={greetUser}>function</button></div>
+      <div><b>1. boolean:</b> false or true</div>
+      <div><b>2. number:</b> decimal, integer, hex, binary, octal </div>
+      <div><b>3. string:</b> string and template string</div>
+      <div><b>4. null & undefined:</b> undefined === undefined, null !== object, null === null</div>
+      <div><b>5. void:</b> <button onClick={greetUser}>return anything</button></div>
     </>
   )
 }
