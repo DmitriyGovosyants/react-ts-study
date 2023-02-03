@@ -13,6 +13,7 @@ import Object from "./webdev/components/Object";
 import ClassType from "./webdev/components/ClassType";
 import GenericType from "./webdev/components/GenericType";
 import UtilityTS from "./webdev/components/UtilityTS";
+import ClassComponentType from "./webdev/components/ClassComponentType";
 
 const App = () => {
   return (
@@ -35,6 +36,8 @@ const App = () => {
             <Route path={'class'} element={<ClassType />} />
             <Route path={'generic'} element={<GenericType />} />
             <Route path={'utility'} element={<UtilityTS />} />
+            {/* <Route path={'fctype'} element={<FCType />} /> */}
+            <Route path={'cctype'} element={<ClassComponentType />} />
           </Route>
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />

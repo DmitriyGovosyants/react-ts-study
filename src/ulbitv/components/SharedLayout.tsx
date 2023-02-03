@@ -28,6 +28,10 @@ const SharedLayout = () => {
           <NavLink style={{ padding: 10, border: '4px solid red', marginRight: 10 }} to={'/webdev/generic'}>Generic</NavLink>
           <NavLink style={{padding: 10, border: '4px solid red', marginRight: 10}} to={'/webdev/utility'}>Utility</NavLink>
         </div>
+        <div style={{marginTop: 40}}>
+          <NavLink style={{ padding: 10, border: '4px solid red', marginRight: 10 }} to={'/webdev/fctype'}>Functional component type</NavLink>
+          <NavLink style={{ padding: 10, border: '4px solid red', marginRight: 10 }} to={'/webdev/cctype'}>Class component type</NavLink>
+        </div>
       </div>
       <main>
         <Suspense fallback={<div>Loading.....</div>}>
